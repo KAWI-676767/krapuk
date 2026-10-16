@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#d9ecff">
+<title>กระปุก</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+
+<main id="app"></main>
+
+<nav id="dock" data-tab="home" data-ta="menu_aria" aria-label="เมนูหลัก">
+  <div class="tabs glass" role="tablist">
+    <i class="tab-ind"></i>
+    <button class="tab on" data-action="tab" data-tab="home" role="tab" aria-selected="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-5h-6v5H5a1 1 0 0 1-1-1z"/></svg>
+      <span data-t="tab_home">หน้าหลัก</span>
+    </button>
+    <button class="tab" data-action="tab" data-tab="history" role="tab" aria-selected="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span data-t="tab_history">ประวัติ</span>
+    </button>
+  </div>
+  <button class="add" data-action="deposit" data-ta="deposit_word" aria-label="ฝากเงิน">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+</nav>
+
+<div id="sheet" hidden>
+  <div class="backdrop" data-action="close"></div>
+  <div class="panel" role="dialog" aria-modal="true">
+    <div class="grab" aria-hidden="true"></div>
+    <div id="sheet-body"></div>
+  </div>
+</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

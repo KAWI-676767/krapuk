@@ -1,0 +1,12 @@
+{
+  "appId": "com.krapuk.savings",
+  "appName": "กระปุก",
+  "webDir": "www",
+  "backgroundColor": "#e4f1ff",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
